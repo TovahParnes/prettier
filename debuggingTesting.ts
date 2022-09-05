@@ -1,21 +1,40 @@
-const { constructor } = require("typescript");
-
-class Greeter {
-  greeting: string;
-  greeting2: string;
-
-  constructor(message: string, message2: string) {
-    this.greeting = message;
-    this.greeting2 = message2;
-  }
-
-  greet() {
-    return "Hello, " + this.greeting + this.greeting2;
-  }
+class TestShortParametersNoWrap {
+  constructor(a: A, b: b, c: C, d: D, e: E, f: F, g: G, h: H, i: I, j: J) {}
 }
 
-let greeter = new Greeter("world", "!");
+class TestShortParametersWrap {
+  constructor(
+    a: A,
+    b: b,
+    c: C,
+    d: D,
+    e: E,
+    f: F,
+    g: G,
+    h: H,
+    i: I,
+    j: J,
+    k: K
+  ) {}
+}
 
-export class TestClass {
-  constructor(api: A, config: C, config: d, config: e, config: f) {}
+export class Test1LongParameterNoWrap {
+  constructor(qwertyuiopasdfghjklzxcvbnmqwer: QWERTYUIOPASDFGHJKLZXCVBNMQWER) {}
+}
+
+export class Test1LongParameterWrap {
+  constructor(
+    qwertyuiopasdfghjklzxcvbnmqwert: QWERTYUIOPASDFGHJKLZXCVBNMQWER
+  ) {}
+}
+
+export class Test2LongParameterNoWrap {
+  constructor(qwertyuiopasdfghjkl: QWERTYUIOPASDFGHJKL, zxcvbnmqw: ZXCVBNMQW) {}
+}
+
+export class Test2LongParameterWrap {
+  constructor(
+    qwertyuiopasdfghjkl: QWERTYUIOPASDFGHJKL,
+    zxcvbnmqwe: ZXCVBNMQWE
+  ) {}
 }
