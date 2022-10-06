@@ -18,6 +18,22 @@ class TestShortParametersWrap {
   ) {}
 }
 
+function testFunctionNoWrap(a: A, b: b, c: C, d: D, e: E, f: F, g: G, h: H) {}
+
+function testFunctionWrap(
+  a: A,
+  b: b,
+  c: C,
+  d: D,
+  e: E,
+  f: F,
+  g: G,
+  h: H,
+  i: I,
+  j: J,
+  k: K
+) {}
+
 export class Test1LongParameterNoWrap {
   constructor(qwertyuiopasdfghjklzxcvbnmqwer: QWERTYUIOPASDFGHJKLZXCVBNMQWER) {}
 }
