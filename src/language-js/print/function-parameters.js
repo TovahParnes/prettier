@@ -73,8 +73,6 @@ function printFunctionParameters(
       printed.push(" ");
     } else if (isNextLineEmpty(parameters[index], options)) {
       printed.push(hardline, hardline);
-    } else if (options.singleAttributePerLine) {
-      printed.push(hardline);
     } else {
       printed.push(line);
     }
