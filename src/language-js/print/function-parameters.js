@@ -75,7 +75,7 @@ function printFunctionParameters(
       printed.push(hardline, hardline);
     } else if (
       options.singleAttributePerLine &&
-      parent?.kind === "constructor" &&
+      parent?.kind === "constructor" && 
       options?.parser === "typescript"
     ) {
       printed.push(hardline);
