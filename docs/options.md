@@ -457,7 +457,7 @@ Valid options:
 
 _First available in v2.6.0_
 
-Enforce single attribute per line in HTML, Vue and JSX.
+Enforce single attribute per line in HTML, Vue, JSX and TypeScript constructors.
 
 Valid options:
 
