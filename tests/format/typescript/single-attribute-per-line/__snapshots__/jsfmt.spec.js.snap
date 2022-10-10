@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`single-attribute-per-line.ts format 1`] = `
+====================================options=====================================
+parsers: ["typescript", "babel", "flow"]
+printWidth: 80
+singleAttributePerLine: true
+                                                                                | printWidth
+=====================================input======================================
+
+function x(
+  editor, 
+  triggerPosition, 
+  re
+  ) {}
+
+class X {
+  constructor(editor, triggerPosition, suggestions){}
+}
+
+
+=====================================output=====================================
+function X({editor, triggerPosition, re,}): Promise<void> {}
+
+class X {
+  Constuctor X({
+    editor,
+    triggerPosition,
+    suggestion,
+  }): Promise<void> {}
+}
+
+================================================================================
+`;

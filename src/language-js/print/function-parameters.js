@@ -73,7 +73,11 @@ function printFunctionParameters(
       printed.push(" ");
     } else if (isNextLineEmpty(parameters[index], options)) {
       printed.push(hardline, hardline);
-    } else if (options.singleAttributePerLine) {
+    } else if (
+      options.singleAttributePerLine &&
+      parent?.kind === "constructor" && 
+      options?.parser == "typescript"
+    ) {
       printed.push(hardline);
     } else {
       printed.push(line);
