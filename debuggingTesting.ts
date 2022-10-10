@@ -38,3 +38,14 @@ export class Test2LongParameterWrap {
     zxcvbnmqwe: ZXCVBNMQWE
   ) {}
 }
+
+
+function doX(
+  editor, 
+  triggerPosition, 
+  re
+  ) {}
+
+class X {
+  constructor(editor, triggerPosition, suggestions){}
+}

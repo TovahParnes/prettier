@@ -2,13 +2,11 @@
 
 exports[`single-attribute-per-line.ts format 1`] = `
 ====================================options=====================================
-parsers: ["typescript", "babel", "flow"]
+parsers: ["typescript"]
 printWidth: 80
-singleAttributePerLine: true
                                                                                 | printWidth
 =====================================input======================================
-
-function x(
+function doX(
   editor, 
   triggerPosition, 
   re
@@ -18,16 +16,11 @@ class X {
   constructor(editor, triggerPosition, suggestions){}
 }
 
-
 =====================================output=====================================
-function X({editor, triggerPosition, re,}): Promise<void> {}
+function doX(editor, triggerPosition, re) {}
 
 class X {
-  Constuctor X({
-    editor,
-    triggerPosition,
-    suggestion,
-  }): Promise<void> {}
+  constructor(editor, triggerPosition, suggestions) {}
 }
 
 ================================================================================
