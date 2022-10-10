@@ -1,9 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`single-attribute-per-line.ts format 1`] = `
+exports[`single-attribute-per-line.ts - {"singleAttributePerLine":true} format 1`] = `
 ====================================options=====================================
 parsers: ["typescript"]
 printWidth: 80
+singleAttributePerLine: true
                                                                                 | printWidth
 =====================================input======================================
 function doX(
@@ -20,7 +21,11 @@ class X {
 function doX(editor, triggerPosition, re) {}
 
 class X {
-  constructor(editor, triggerPosition, suggestions) {}
+  constructor(
+    editor,
+    triggerPosition,
+    suggestions
+  ) {}
 }
 
 ================================================================================

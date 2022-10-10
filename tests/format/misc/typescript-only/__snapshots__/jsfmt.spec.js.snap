@@ -148,3 +148,29 @@ type Foo =
 
 ================================================================================
 `;
+
+exports[`single-attribute-per-line.ts format 1`] = `
+====================================options=====================================
+parsers: ["typescript"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+function doX(
+  editor, 
+  triggerPosition, 
+  re
+  ) {}
+
+class X {
+  constructor(editor, triggerPosition, suggestions){}
+}
+
+=====================================output=====================================
+function doX(editor, triggerPosition, re) {}
+
+class X {
+  constructor(editor, triggerPosition, suggestions) {}
+}
+
+================================================================================
+`;
