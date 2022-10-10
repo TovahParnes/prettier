@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`parenthesized-decorators-tagged-template.ts format 1`] = `
+====================================options=====================================
+parsers: ["typescript"]
+printWidth: 80
+                                                                                | printWidth
+=====================================input======================================
+class Test {
+  @foo\`bar\`
+  text: string = "text"
+}
+
+=====================================output=====================================
+class Test {
+  @foo\`bar\`
+  text: string = "text";
+}
+
+================================================================================
+`;
